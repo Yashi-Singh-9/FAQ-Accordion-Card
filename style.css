@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Kumbh Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1rem !important;
+  background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  margin: 8rem auto 2rem auto;
+}
+main .card {
+  background: url(images/bg-pattern-desktop.svg), #fff;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: -530px -265px;
+  margin: 0 auto;
+  display: flex;
+  gap: 6rem;
+  max-width: 920px;
+  width: 100%;
+  height: 530px;
+  border-radius: 25px;
+  box-shadow: 0px 32px 27px -8px rgba(59, 59, 135, 0.81);
+}
+@media (max-width: 930px) {
+  main .card {
+    background: url(images/bg-pattern-mobile.svg), #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+  }
+}
+main .card .image .img-section-center {
+  overflow-x: hidden;
+}
+@media (max-width: 929px) {
+  main .card .image .img-section-center {
+    overflow-x: unset;
+  }
+}
+main .card .image .img-section-center .women-illustration {
+  display: block;
+  margin-top: 4.7rem;
+  margin-left: -4.5rem;
+  overflow: hidden;
+}
+@media (max-width: 929px) {
+  main .card .image .img-section-center .women-illustration {
+    content: url('images/illustration-woman-online-mobile.svg') !important;
+    width: 150%;
+    max-width: 100%;
+    margin: -7.5rem auto;
+  }
+}
+main .card .image .box-illustration {
+  display: block;
+  margin-left: -20.5%;
+  margin-top: -48%;
+}
+@media (max-width: 929px) {
+  main .card .image .box-illustration {
+    display: none;
+  }
+}
+main .card .faq-wrapper {
+  max-width: 350px;
+  width: 100%;
+  margin-left: 1rem;
+  margin-top: 4.5rem;
+}
+main .card .faq-wrapper h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: hsl(238, 29%, 16%);
+}
+main .card .faq-wrapper .accordion-item {
+  cursor: pointer;
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-button {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(240, 6%, 50%);
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-button:hover {
+  color: hsl(14, 88%, 65%) !important;
+  /* Hover effect */
+  font-weight: 700 !important;
+  /* Make text bold on hover */
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-button.selected {
+  color: hsl(238, 29%, 16%) !important;
+  /* Active state */
+  font-weight: 700 !important;
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-button img {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-button.selected img {
+  transform: rotate(180deg);
+}
+main .card .faq-wrapper .accordion-item .accordion-header .accordion-body {
+  display: none;
+  margin-bottom: 1.8rem;
+  font-size: 0.85rem;
+}
+main .card .faq-wrapper .accordion-item .accordion-header hr {
+  border: 1px solid hsl(240, 5%, 91%);
+  margin-bottom: 1rem;
+}
+@media (max-width: 440px) {
+  main .card .faq-wrapper .accordion-item .accordion-header hr {
+    display: none;
+  }
+}
+main .card .faq-wrapper .accordion-item .accordion-header:nth-child(2) .accordion-body {
+  display: block;
+}
+main .card .faq-wrapper .accordion-item .accordion-header:nth-child(2) .accordion-button img {
+  transform: rotate(180deg);
+}
+main .card .faq-wrapper .accordion-item .accordion-header:nth-child(2) .accordion-button {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+footer {
+  text-align: center;
+  color: #fff;
+}
+footer a,
+footer a:visited {
+  text-decoration: none;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+}
+/* For screen size 440px or below */
+@media (max-width: 440px) {
+  img[src="images/icon-arrow-down.svg"] {
+    display: none;
+    /* Hide the image */
+  }
+}
