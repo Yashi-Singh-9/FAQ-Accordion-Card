@@ -41,8 +41,8 @@ Users should be able to:
 
 ### 🔗 Links
 
-- **Solution URL:** [Frontend Mentor Solution](https://your-solution-url.com)
-- **Live Site URL:** [Live Demo](https://your-live-site-url.com)
+- **Solution URL:** [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/faq-accordion-card-JD4h7AbJ1B)
+- **Live Site URL:** [Live Demo](https://yashi-singh-9.github.io/FAQ-Accordion-Card/)
 
 ---
 
